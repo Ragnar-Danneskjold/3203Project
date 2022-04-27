@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\css",
+    "\\views",
+    "\\views\\layouts",
+    "\\views\\partials",
+    "\\views\\Scripts"
+  ],
+  "SelectedNode": "\\views\\layouts\\home-page-layout.ejs",
+  "PreviewInSolutionExplorer": false
+}
