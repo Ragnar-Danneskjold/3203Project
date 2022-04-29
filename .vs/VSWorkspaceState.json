@@ -8,6 +8,6 @@
     "\\views\\partials",
     "\\views\\Scripts"
   ],
-  "SelectedNode": "\\views\\layouts\\home-page-layout.ejs",
+  "SelectedNode": "\\app.js",
   "PreviewInSolutionExplorer": false
 }

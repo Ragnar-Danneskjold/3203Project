@@ -19,10 +19,49 @@ app.get('', (req, res) => {
     res.render('index', { title: 'Home Page'})
 })
 
-app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About Page', layout: './layouts/party-info-layout' })
+
+
+app.get('/items', (req, res) => {
+    res.render('items', {
+        title: 'Items page', layout: './layouts/home-page-layout'})
 })
+
+app.get('/locationChange', (req, res) => {
+    res.render('locationChange', {
+        title: 'Location Change Page', layout: './layouts/home-page-layout'
+    })
+})
+
+app.get('/guests', (req, res) => {
+    res.render('guests', {
+        title: 'Guests Page', layout: './layouts/home-page-layout'
+    })
+})
+
+app.get('/yourParties', (req, res) => {
+    res.render('yourParties', {
+        title: 'Your Parties Page', layout: './layouts/home-page-layout'
+    })
+})
+
+app.get('/invitedParties', (req, res) => {
+    res.render('invitedParties', {
+        title: 'Parties You Are Invited To', layout: './layouts/home-page-layout'
+    })
+})
+
+app.get('/planNewParty', (req, res) => {
+    res.render('planNewParty', {
+        title: 'Plan Your Next Party', layout: './layouts/home-page-layout'
+    })
+})
+
+app.get('/singleParty', (req, res) => {
+    res.render('singleParty', {
+        title: 'Party Overview', layout: './layouts/home-page-layout'
+    })
+})
+
 
 // Listen on Port 5000
 app.listen(port, () => console.info(`App listening on port ${port}`))
