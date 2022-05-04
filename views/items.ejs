@@ -1,0 +1,81 @@
+<div class="sidenav">
+	<a href="http://localhost:3000">Back to Home</a>
+	<br></br>
+	<a href="#">Plan New Party</a>
+	<br></br>
+	<a href="/singleParty">Add items</a>
+	<br></br>
+	<a href="/items">Add items</a>
+	<br></br>
+	<a href="/locationChange">Change Location</a>
+	<br></br>
+	<a href="/guests">Invite Guests</a>
+</div>
+
+
+
+<div class="row">
+	<div class="column">
+		<img src="ItemImage1.jfif" height="222px" width="333px" class ="centered" alt="A picture of a party"></img>
+	</div>
+	<div class="column">
+		<img src="ItemsImg2.jpg" height="222px" width="333px" class ="centered" alt="A picture of a party"></img>
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="column">
+  <p>Item:</p>
+  </div>
+  <div class="column">
+  <p>Being Brought By:</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="column">
+		<p id ="itemColumn"></p>
+	</div>
+	<div class="bringingColumn">
+		<p id ="bringerColumn"></p>
+	</div>
+</div>
+
+<!--these are supposed to display the list of items and who if anyone is bringing them-->
+
+
+
+<div class="row">
+  <div class="column">
+  <div class = "input">
+<form>
+  <label for="newItem">Add an Item</label><br>
+  <input type="text" id="newItem" name="newItem"><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+  </div>
+  <div class="column">
+  <div class = "input">
+<form>
+  <label for="assigningItem">Assign Item to Person
+  <br>
+  <br>
+  Item
+  </label><br>
+  <input type="text" id="assigningItem" name="assigningItem"><br>
+  <label for"personAssigned">Person Bringing Item</label><br>
+  <input type="text" id="personAssigned" name="personAssigned"><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+	</div>
+</div>

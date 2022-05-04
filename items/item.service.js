@@ -32,7 +32,7 @@ async function create(itemParam) {
     const Item = new Item(itemParam);
 
     // save user
-    await party.save();
+    await Item.save();
 }
 
 //Not Finished
