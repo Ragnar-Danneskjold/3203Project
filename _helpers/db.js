@@ -6,5 +6,6 @@ mongoose.connect(process.env.MONGODB_URI || config.connectionString, connectionO
 
 //Export all models here
 module.exports = {
-    User: require('../users/user.model')
+    User: require('../users/user.model'),
+    Party: require('../partys/party.model')
 };
