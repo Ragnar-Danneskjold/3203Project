@@ -20,7 +20,6 @@ router.get('/home', (req, res) => {
 
 router.get('/yourParties/show', (req, res, next) => {
 
-  console.log(req.data)
   Party.find((err, response) => {
     res.json(response);
   });

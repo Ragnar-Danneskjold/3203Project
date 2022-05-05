@@ -8,7 +8,6 @@ const Party = db.Party;
 module.exports = {
     getAll,
     getById,
-    getByName,
     create,
     update,
     delete: _delete
@@ -19,9 +18,6 @@ async function getAll() {
     return await Party.find();
 }
 
-async function getByName(name) {
-    return await Party.find({name: name});
-}
 
 async function getById(id) {
     return await Party.findById(id);

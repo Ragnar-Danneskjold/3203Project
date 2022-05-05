@@ -1,28 +1,38 @@
+const twilio = require("twilio");
+
 $(function () {
 
-       //update data in the table
-       $('table').on('click', '.view-button', function () {
-        let rowEl = $(this).closest('tr');
-        let name = rowEl.find('.name').text
-
-        //
-        $.ajax({
-            url: '/party/' + name,
-            type: 'GET',
-            dataType: "json",
-            success: function (response) {
-                console.log(response);
-                
-            }
-        });
-
-    });
 
     //show the tables/data
     $("#showBtn").on("click", function () {
         Show();
     });
 
+    //show the tables/data
+    $('table').on('click', '.view-button', function () {
+        console.log("here")
+        View();
+    });
+
+    $("#sendBtn").on("click", function (Number) {
+        console.log("here")
+        testsend(Number);
+    });
+
+    function View() {
+        console.log("here")
+        app.views.current.router.navigate("/singleParty.ejs");
+    }
+
+    function testsend(Number){
+        client.messages
+          .create({
+             body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+             from: '+19705288981',
+             to: Number
+           })
+          .then(message => console.log(message.sid));
+        };
 
     function Show() {
         $.ajax({
