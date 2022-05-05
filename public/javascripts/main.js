@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(function () {
 
     //show the tables/data
-    $("#showBtn").click(function () {
+    $('showBtn').on("click", function () {
         Show();
     });
 
