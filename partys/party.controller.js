@@ -15,8 +15,8 @@ module.exports = router;
 //Fix
 function register(req, res, next) {
     partyService.create(req.body)
-        .then(() => res.json({}))
-        .catch(err => next(err));
+        .then(res.redirect('/yourParties'))
+        //.catch(err => next(err));
 }
 
 function getAll(req, res, next) {

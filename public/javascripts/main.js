@@ -14,7 +14,7 @@ $(document).ready(function () {
             success: function (response) {
                 console.log(response);
                 // let tbodyEl = $('tbody');
-                let tbodyEl = $("#myTable > tbody")
+                let tbodyEl = $("#partyTable > tbody")
 
                 tbodyEl.html('');
 
