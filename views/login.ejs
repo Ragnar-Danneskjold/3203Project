@@ -42,23 +42,23 @@
         <div class="col-lg-8">
           <div class="card-body py-5 px-md-5">
   
-            <form action="/users/login" method="post">
+            <form action="/users/authenticate" method="post">
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form2Example1" class="form-control" />
-                <label class="form-label" for="form2Example1">Email address</label>
+                <input type="email" name="email" id="email" class="form-control" />
+                <label class="form-label" for="email">Email address</label>
               </div>
   
               <!-- Password input -->
               <div class="form-outline mb-4">
-                <input type="password" id="form2Example2" class="form-control" />
-                <label class="form-label" for="form2Example2">Password</label>
+                <input type="password" name="password" id="password" class="form-control" />
+                <label class="form-label" for="password">Password</label>
               </div>
   
               <!-- Submit button for sign in -->
               <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
               
-              </form>
+            </form>
             
               <form action="/register" method="get">
                 <!-- Submit button for register -->

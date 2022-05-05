@@ -12,7 +12,15 @@ function jwt() {
             '/users/authenticate',
             '/users/register',
             '/',
-            '/register'
+            '/register',
+            '/home',
+            '/items',
+            '/locationChange',
+            '/guests',
+            '/yourParties',
+            'invitedParties',
+            '/planNewParty',
+            '/singleParty'
         ]
     });
 }
