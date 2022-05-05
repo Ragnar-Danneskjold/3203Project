@@ -1,7 +1,7 @@
 //router to handle front end routing
 const express = require('express');
 const router = express.Router();
-
+const partyService = require('./partys/party.service');
 
 
 // Routes
@@ -17,6 +17,12 @@ router.get('/register', (req, res) => {
 router.get('/home', (req, res) => {
   res.render('index', { title: 'Home Page'})
 })
+
+router.get('/show', (req, res, next) => {
+  partyService.find((err, response) => {
+    res.json(response);
+  });
+});
 
 router.get('/items', (req, res) => {
   res.render('items', {

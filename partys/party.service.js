@@ -24,10 +24,7 @@ async function getById(id) {
 
 //Not Finished
 async function create(partyParam) {
-    // validate
-    if (await Party.findOne({ name: partyParam.name })) {
-        throw 'Party Name "' + partyParam.name + '" is already taken';
-    }
+    console.log(partyParam)
 
     const party = new Party(partyParam);
 

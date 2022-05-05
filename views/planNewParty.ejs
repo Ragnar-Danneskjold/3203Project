@@ -13,18 +13,19 @@
 
 
 	   <h2>Plan Your Next Party</h2>
+<form action="/partys/register" method="post">
+  <label for="name">Name your party!</label><br>
+  <input type="text" id="name" name="name"><br>
 
-  <label for="setPartyLocation">Choose Your Party's Location</label><br>
-  <input type="text" id="setPartyLocation" name="setPartyLocation"><br>
+  <label for="location">Choose Your Party's Location</label><br>
+  <input type="text" id="location" name="location"><br>
 
-  <label for="setPartyTime">When Will Your Party Happen?</label><br>
-  <input type="text" id="setPartyTime" name="inviteNewPerson"><br>
-  
-  <input type="submit" value="Submit">
+  <label for="date">When Will Your Party Happen?</label><br>
+  <input type="date" id="date" name="date"><br>
 
-<!--buttons meant to submit info for a new party-->
-
+	<!--buttons meant to submit info for a new party-->
+	<button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
 	   
-
+</form>
 
 	   </div>

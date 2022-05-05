@@ -14,7 +14,7 @@ module.exports = router;
 
 //Fix
 function register(req, res, next) {
-    userService.create(req.body)
+    partyService.create(req.body)
         .then(() => res.json({}))
         .catch(err => next(err));
 }
@@ -38,7 +38,7 @@ function update(req, res, next) {
 }
 
 function _delete(req, res, next) {
-    userService.delete(req.params.id)
+    partyService.delete(req.params.id)
         .then(() => res.json({}))
         .catch(err => next(err));
 }
