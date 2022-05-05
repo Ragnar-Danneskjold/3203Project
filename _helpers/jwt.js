@@ -22,7 +22,8 @@ function jwt() {
             '/planNewParty',
             '/singleParty',
             '/partys/register',
-            '/show'
+            '/show',
+            '/yourParties/show'
         ]
     });
 }

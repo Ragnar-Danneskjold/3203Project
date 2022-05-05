@@ -9,6 +9,7 @@ router.get('/', getAll);
 router.get('/:id', getById);
 router.put('/:id', update);
 router.delete('/:id', _delete);
+router.get('/:name', getByName);
 
 module.exports = router;
 
@@ -17,6 +18,11 @@ function register(req, res, next) {
     partyService.create(req.body)
         .then(res.redirect('/yourParties'))
         //.catch(err => next(err));
+}
+
+function getByName(req, res, next) {
+    partyService.getByName(req.body)
+    .then(res.redirect('/yourParties/:name'))
 }
 
 function getAll(req, res, next) {

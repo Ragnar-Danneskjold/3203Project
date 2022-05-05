@@ -5,13 +5,17 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('_helpers/jwt');
 const errorHandler = require('_helpers/error-handler');
+let cookieParser = require('cookie-parser');
 const expressLayouts = require('express-ejs-layouts')
 let path = require('path');
+let logger = require('morgan');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
+app.use(logger('dev'));
 
 // use JWT auth to secure the api
 app.use(jwt());
