@@ -17,6 +17,7 @@ module.exports = {
 async function authenticate({ email, password }) {
 
     const user = await User.findOne({ email });
+
     var compare = password.localeCompare(user.password)
     if (user && compare == 0) {
         const token = jwt.sign({ sub: user.id }, config.secret, { expiresIn: '7d' });
